@@ -1,24 +1,44 @@
 package cognizant.com.holidayapp;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.os.Bundle;
-import android.app.Activity;
-import android.view.Menu;
-import android.widget.CalendarView;
-import android.widget.CalendarView.OnDateChangeListener;
-import android.widget.Toast;
+import android.view.View;
+import android.widget.DatePicker;
+import android.widget.Button;
 
 
 public class MainActivity extends ActionBarActivity {
 
-
+   DatePicker initDate ;
+    DatePicker endDate ;
+    Button buttonNext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        initDate = (DatePicker) findViewById(R.id.datePicker);
+        endDate = (DatePicker) findViewById(R.id.datePicker2);
+        buttonNext = (Button) findViewById(R.id.button);
+        buttonNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(), ShowDate.class);
+                intent.putExtra("startDay",initDate.getDayOfMonth());
+                intent.putExtra("endDay",endDate.getDayOfMonth());
+                intent.putExtra("startMonth",initDate.getMonth());
+                intent.putExtra("endMonth",endDate.getMonth());
+                intent.putExtra("startYear",initDate.getYear());
+                intent.putExtra("endYear",endDate.getYear());
+                startActivity(intent);
+            }
+        });
+
+
+
 
 
     }
