@@ -16,7 +16,7 @@ public class ShowDate extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_date);
-         //tarini test
+         //tarini test 3
         Bundle b = getIntent().getExtras();
         int startDay = b.getInt("startDay");
         int endDay =   b.getInt("endDay");
