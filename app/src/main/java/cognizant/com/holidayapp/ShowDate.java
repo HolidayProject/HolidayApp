@@ -11,7 +11,7 @@ public class ShowDate extends ActionBarActivity {
 
     TextView textInit;
     TextView textEnd;
-
+    //push luismi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
