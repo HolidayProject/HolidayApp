@@ -37,13 +37,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dip"
-            android:layout_below="@id/header">
+            android:layout_below="@id/header"
+            android:id="@+id/linearLayout">
             <!-- Full Name Label -->
             <TextView android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#372c24"
                 android:text="Full Name"/>
-            <EditText android:id="@+id/reg_fullname"
+            <EditText android:id="@+id/name"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dip"
@@ -72,23 +73,22 @@
                 android:singleLine="true"
                 android:layout_marginTop="5dip"/>
             <!-- Register Button -->
-            <Button android:id="@+id/btnRegister"
+            <Button android:id="@+id/btn_register"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dip"
                 android:text="Register New Account"/>
             <!-- Link to Login Screen -->
-            <TextView android:id="@+id/link_to_login"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dip"
-                android:layout_marginBottom="40dip"
-                android:text="Already has account! Login here"
-                android:gravity="center"
-                android:textSize="20dip"
-                android:textColor="#025f7c"/>
 
         </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To Login"
+            android:id="@+id/btnLinkToLoginScreen"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true" />
         <!-- Registration Form Ends -->
     </RelativeLayout>
 </ScrollView>

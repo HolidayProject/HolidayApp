@@ -20,7 +20,7 @@ public class SelectDateActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        initDate = (DatePicker) findViewById(R.id.datePicker);
+      /*  initDate = (DatePicker) findViewById(R.id.datePicker);
         endDate = (DatePicker) findViewById(R.id.datePicker2);
         buttonNext = (Button) findViewById(R.id.button);
         buttonNext.setOnClickListener(new View.OnClickListener() {
@@ -35,7 +35,7 @@ public class SelectDateActivity extends ActionBarActivity {
                 intent.putExtra("endYear",endDate.getYear());
                 startActivity(intent);
             }
-        });
+        });*/
 
 
 
