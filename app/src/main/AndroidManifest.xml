@@ -24,6 +24,11 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="cognizant.com.holidayapp.MainActivity" />
         </activity>
+        <!--  Entry for RegisterActivity.class -->
+        <activity android:name=".RegisterActivity"
+            android:label="Register New Account"></activity>
+        <activity android:name=".LoginActivity"
+            android:label="New login"></activity>
     </application>
 
 </manifest>
